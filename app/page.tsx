@@ -38,6 +38,13 @@ export default function Page() {
             className="hidden md:block"
             alt="데스크탑 버전 이미지"
           />
+          <Image
+            src={"/hero-mobile.png"}
+            width={560}
+            height={620}
+            className="block md:hidden"
+            alt="모바일 버전 이미지"
+          />
         </div>
       </div>
     </main>
