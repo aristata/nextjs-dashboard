@@ -7,7 +7,13 @@ import {
   LatestInvoicesSkeleton,
   RevenueChartSkeleton
 } from "@/app/ui/skeletons";
+import { Metadata } from "next";
 import { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "dashboard",
+  description: "dashboard for Acme"
+};
 
 export default async function Page() {
   return (

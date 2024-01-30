@@ -2,6 +2,11 @@ import Form from "@/app/ui/invoices/edit-form";
 import Breadcrumbs from "@/app/ui/invoices/breadcrumbs";
 import { fetchCustomers, fetchInvoiceById } from "@/app/lib/data";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "invoice edit"
+};
 
 export default async function Page({ params }: { params: { id: string } }) {
   // 1. props 로 id 가져오기
